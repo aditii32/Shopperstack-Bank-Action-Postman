@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "6923cebb-76d0-4ae4-bb61-fec6ad7e4df9",
+		"name": "Bank Action",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33643733",
+		"_collection_link": "https://www.postman.com/spacecraft-specialist-7984735/workspace/shopperstack/collection/33643733-6923cebb-76d0-4ae4-bb61-fec6ad7e4df9?action=share&source=collection_link&creator=33643733"
+	},
+	"item": [
+		{
+			"name": "Returns all the available bank names",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{JWTtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/banks",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
